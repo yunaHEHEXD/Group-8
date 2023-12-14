@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sixfold Legion</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Minimum height to cover the entire viewport */
+    }
+    header {
+      background-color: #D32F2F; /* Dark Red */
+      color: #ffffff;
+      text-align: center;
+      padding: 1em;
+    }
+    h1 {
+      font-size: 3em; /* Larger font size */
+      font-weight: bold; /* Bold text */
+      margin: 0;
+      text-shadow: 2px 2px 4px #000; /* Text outline */
+    }
+    nav {
+      background-color: #222; /* Darker Gray */
+      text-align: center;
+      padding: 0.5em;
+    }
+    nav a {
+      color: #fff; /* White */
+      margin: 0 0.3em; /* Reduced margin between links */
+      text-decoration: none;
+      font-weight: bold; /* Bold text for navigation links */
+      font-size: 1.2em; /* Larger font size for navigation links */
+      padding: 0.5em 1em; /* Add padding around the links */
+      border-radius: 5px; /* Rounded corners for a button-like appearance */
+      transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+    }
+    nav a:hover {
+      background-color: #D32F2F; /* Dark Red on hover */
+      color: #fff; /* White on hover */
+    }
+    section {
+      display: none;
+      padding: 2em;
+      flex: 1; /* Use remaining space in the flex container */
+    }
+    footer {
+      background-color: #D32F2F; /* Dark Red */
+      color: #ffffff;
+      text-align: center;
+      padding: 1em;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sixfold Legion</h1>
+  </header>
+  <nav>
+    <a href="#" onclick="showContent('home')">Home</a>
+    <a href="#" onclick="showContent('about')">About Us</a>
+    <a href="#" onclick="showContent('schedule')">Streaming Schedule</a>
+  </nav>
+  <section id="home">
+    <!-- Home Page Content -->
+  </section>
+  <section id="about">
+    <!-- About Us Content -->
+    <h2>Channel Name: Sixfold Legion</h2>
+    <p><strong>Who Are We:</strong></p>
+    <p>We are a group of student e-games players.</p>
+    <p><strong>What We Do:</strong></p>
+    <p>Our focus is all about game-exploring, playing different games such as FPS, sci-fi, adventure, and more. We intend to create a montage video featuring highlights and bloopers from our gaming experiences.</p>
+    <p><strong>What We Plan to Build:</strong></p>
+    <p>We aspire to create a game-explorer community that brings joy and excitement to gaming enthusiasts. Our platform will serve as a virtual world where we explore different games, engage in conversations, and connect with others who are interested in the things we do.</p>
+    <p><strong>How We Promote Our Channel:</strong></p>
+    <p>We plan to promote our streaming through visually appealing posters that convey our streaming schedule and chosen games that we will be playing. For example, an arcade-themed poster announcing our mobile game streams every Saturday and Sunday from Philippine Server time(PHT) 1:00 PM to 4:00 PM and the games that would be involved in the gameplay such Roblox, Mobile legends, Call of duty. The poster shall encourage viewers to join our stream.</p>
+  </section>
+  <section id="schedule">
+    <!-- Streaming Schedule Content -->
+  </section>
+  <footer>
+    <p>&copy; 2023 Sixfold Legion | Promotional Links: <a href="#">Facebook Page</a>, <a href="#">Youtube Channel</a></p>
+  </footer>
+
+  <script>
+    function showContent(sectionId) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(function (section) {
+        section.style.display = 'none';
+      });
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
